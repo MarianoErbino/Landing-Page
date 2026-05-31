@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cerrajería Vichi - Servicio 24hs en CABA. Aperturas sin daño, cambio de cerraduras, copias de llaves, cerraduras digitales." />
+  <title>Cerrajería Vichi · 24hs en CABA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.jpeg" />
+</head>
+<body>
+  <!-- INTRO ANIMADA -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__stage">
+      <span class="intro__ring intro__ring--1"></span>
+      <span class="intro__ring intro__ring--2"></span>
+      <span class="intro__ring intro__ring--3"></span>
+      <div class="intro__logo">
+        <img src="assets/logo.jpeg" alt="Cerrajería Vichi" />
+        <span class="intro__shine"></span>
+      </div>
+      <div class="intro__text">
+        <span class="intro__brand">Vichi</span>
+        <span class="intro__tag">Cerrajería · 24hs</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#" class="brand">
+        <img src="assets/logo.jpeg" alt="Logo Cerrajería Vichi" />
+        <span>Vichi <small>Cerrajería</small></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#trabajos">Trabajos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav__end">
+        <a href="tel:+5491126762031" class="nav__cta">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.58-6.58l2.2-2.2a1 1 0 0 0 .24-1.02A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1c0 9.39 7.61 17 17 17a1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>
+          <span class="nav__cta-text">Llamar</span>
+        </a>
+        <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="grid-pattern"></div>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__badge">
+          <span class="dot"></span> Disponible ahora · CABA y GBA
+        </div>
+        <h1 class="hero__title">
+          Tuviste un problema,<br />
+          <span class="gradient-text">Vichi te lo soluciona.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Cerrajería de urgencia las 24 horas. Apertura sin daño, cambio de
+          cerraduras, copias de llaves y trabajos a medida.
+        </p>
+
+        <div class="hero__cta">
+          <a href="tel:+5491126762031" class="btn btn--primary btn--lg">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.58-6.58l2.2-2.2a1 1 0 0 0 .24-1.02A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1c0 9.39 7.61 17 17 17a1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>
+            Llamar ahora
+            <span class="btn__sub">+54 9 11 2676 2031</span>
+          </a>
+          <a href="https://wa.me/5491126762031?text=Hola%20Vichi%2C%20necesito%20un%20cerrajero" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.555-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="trust__item">
+            <strong>6</strong>
+            <span>años de oficio</span>
+          </div>
+          <div class="trust__item">
+            <strong>24/7</strong>
+            <span>guardia activa</span>
+          </div>
+          <div class="trust__item">
+            <strong>30 min</strong>
+            <span>tiempo promedio</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- AGENDAR VISITA -->
+    <section id="agendar" class="booking">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Visita programada</span>
+          <h2>Agendá la visita del cerrajero</h2>
+          <p class="section__sub">Elegí día y horario. Atendemos de <strong>12:00 a 16:00</strong> y de <strong>19:00 a 21:00</strong>. Te confirmamos por WhatsApp.</p>
+        </header>
+
+        <div class="booking__wrap">
+          <form class="booking__form" id="bookingForm" novalidate>
+            <div class="field">
+              <label for="bk-name">Nombre y apellido</label>
+              <input type="text" id="bk-name" name="name" placeholder="Ej: Juan Pérez" required />
+            </div>
+
+            <div class="field">
+              <label for="bk-phone">Teléfono (WhatsApp)</label>
+              <input type="tel" id="bk-phone" name="phone" placeholder="Ej: 11 2676 2031" required />
+            </div>
+
+            <div class="field field--full">
+              <label for="bk-address">Dirección de la visita</label>
+              <input type="text" id="bk-address" name="address" placeholder="Calle, altura, piso/depto, barrio" required />
+            </div>
+
+            <div class="field">
+              <label for="bk-service">Tipo de servicio</label>
+              <select id="bk-service" name="service" required>
+                <option value="">Elegí un servicio…</option>
+                <option value="apertura">Apertura de puerta</option>
+                <option value="cambio">Cambio de cerradura</option>
+                <option value="digital">Cerradura digital</option>
+                <option value="copias">Copia de llaves</option>
+                <option value="presupuesto">Presupuesto / consulta</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="bk-date">Día</label>
+              <input type="date" id="bk-date" name="date" required />
+            </div>
+
+            <div class="field field--full">
+              <label>Horario disponible</label>
+              <div class="slots" id="bk-slots" role="radiogroup" aria-label="Horarios disponibles">
+                <!-- slots inyectados por JS -->
+              </div>
+              <input type="hidden" id="bk-time" name="time" required />
+              <p class="slots__hint" id="bk-slots-hint">Seleccioná primero un día.</p>
+            </div>
+
+            <div class="field field--full">
+              <label for="bk-notes">Detalles (opcional)</label>
+              <textarea id="bk-notes" name="notes" rows="3" placeholder="Contanos brevemente qué necesitás (modelo de puerta, marca de cerradura, etc.)"></textarea>
+            </div>
+
+            <div class="field field--full booking__submit">
+              <button type="submit" class="btn btn--primary btn--lg">Confirmar visita</button>
+              <p class="booking__legal">Al confirmar, el cerrajero se contacta por WhatsApp para acordar el ingreso.</p>
+            </div>
+          </form>
+
+          <aside class="booking__side">
+            <div class="booking__info">
+              <h3>Cómo funciona</h3>
+              <ol>
+                <li>Elegís día y horario disponible.</li>
+                <li>Registramos tu visita en la agenda del cerrajero.</li>
+                <li>Te contactamos por WhatsApp para confirmar.</li>
+                <li>Vichi llega a tu domicilio en el horario pactado.</li>
+              </ol>
+            </div>
+            <div class="booking__hours">
+              <h4>Franjas de visita</h4>
+              <ul>
+                <li><span class="hours__dot"></span>Mediodía · 12:00 a 16:00</li>
+                <li><span class="hours__dot"></span>Tarde-noche · 19:00 a 21:00</li>
+              </ul>
+              <p class="booking__urgent">¿Es urgente y no podés esperar? <a href="tel:+5491126762031">Llamanos las 24 hs</a>.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL CONFIRMACIÓN VISITA -->
+    <div class="modal modal--confirm" id="bookingConfirm" aria-hidden="true">
+      <div class="modal__backdrop" data-close-confirm></div>
+      <div class="modal__panel modal__panel--sm" role="dialog" aria-modal="true" aria-labelledby="bkConfirmTitle">
+        <button class="modal__close" data-close-confirm aria-label="Cerrar">×</button>
+        <div class="confirm">
+          <div class="confirm__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3 id="bkConfirmTitle">¡Ya registramos tu visita!</h3>
+          <p>El cerrajero se contactará por WhatsApp para confirmarla.</p>
+          <div class="confirm__detail" id="bkConfirmDetail"></div>
+          <div class="confirm__actions">
+            <a href="https://wa.me/5491126762031" target="_blank" rel="noopener" class="btn btn--whatsapp">Abrir WhatsApp</a>
+            <button type="button" class="btn btn--ghost" data-close-confirm>Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Qué hacemos</span>
+          <h2>Soluciones de cerrajería completas</h2>
+        </header>
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 9.4 8 10 4.5-.6 8-5 8-10V6l-8-4z"/></svg>
+            </div>
+            <h3>Aperturas de urgencia</h3>
+            <p>Sin daños a la cerradura. Autos, casas, departamentos, comercios.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Cambio de cerraduras</h3>
+            <p>Multipunto, antiganzúa, doble paleta. Marcas Trabex, Kallay, Prive.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 10v6m11-11h-6M7 12H1"/></svg>
+            </div>
+            <h3>Cerraduras digitales</h3>
+            <p>Instalación y configuración de cerraduras inteligentes y biométricas.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3.5-7.1"/><path d="M21 4v6h-6"/></svg>
+            </div>
+            <h3>Copias de llaves</h3>
+            <p>Llaves codificadas, de seguridad y para autos con chip transponder.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section id="trabajos" class="works">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Portfolio</span>
+          <h2>Trabajos realizados</h2>
+          <p class="section__sub">Algunos de los últimos servicios. Tocá una tarjeta para ver más fotos.</p>
+        </header>
+
+        <div class="works__filters" id="workFilters">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="apertura">Aperturas</button>
+          <button class="chip" data-filter="cambio">Cambio cerradura</button>
+          <button class="chip" data-filter="digital">Digital / Acceso</button>
+          <button class="chip" data-filter="copias">Copias</button>
+          <button class="chip" data-filter="auto">Autos</button>
+        </div>
+
+        <div class="works__grid" id="worksGrid">
+          <!-- cards inyectadas por JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / EMERGENCIA -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="contact__card">
+          <div>
+            <span class="eyebrow eyebrow--light">¿Es una emergencia?</span>
+            <h2>Llamanos. Estamos en camino.</h2>
+            <p>Atención 24 horas todos los días del año. Zonas: CABA y GBA.</p>
+          </div>
+          <div class="contact__actions">
+            <a href="tel:+5491126762031" class="btn btn--primary btn--lg">Llamar +54 9 11 2676 2031</a>
+            <a href="https://wa.me/5491126762031" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">Escribir por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#" class="brand">
+          <img src="assets/logo.jpeg" alt="Logo" />
+          <span>Vichi Cerrajería</span>
+        </a>
+        <p class="footer__about">6 años cuidando las puertas de tu casa, tu auto y tu local.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+5491126762031">+54 9 11 2676 2031</a></li>
+          <li><a href="https://wa.me/5491126762031">WhatsApp</a></li>
+          <li>CABA · GBA</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horarios</h4>
+        <ul>
+          <li>Urgencias: 24 hs</li>
+          <li>Taller: Lun a Sáb 9–19</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© <span id="year"></span> Cerrajería Vichi · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <!-- BOTONES FLOTANTES -->
+  <div class="fab-stack">
+    <a href="https://wa.me/5491126762031?text=Hola%20Vichi%2C%20necesito%20un%20cerrajero" target="_blank" rel="noopener" class="fab fab--wa" aria-label="Enviar mensaje por WhatsApp">
+      <span class="fab__pulse"></span>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.555-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span class="fab__label">Enviar mensaje</span>
+    </a>
+    <a href="tel:+5491126762031" class="fab" aria-label="Llamar a Cerrajería Vichi - Emergencia 24hs">
+      <span class="fab__pulse"></span>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.58-6.58l2.2-2.2a1 1 0 0 0 .24-1.02A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1c0 9.39 7.61 17 17 17a1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>
+      <span class="fab__label">Emergencia 24hs</span>
+    </a>
+  </div>
+
+  <!-- MODAL TRABAJO -->
+  <div class="modal" id="workModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <button class="modal__close" data-close aria-label="Cerrar">×</button>
+      <div class="modal__gallery">
+        <img class="modal__hero" id="modalHero" alt="" />
+        <div class="modal__thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="modal__body">
+        <span class="chip" id="modalCategory"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <a href="https://wa.me/5491126762031?text=Hola%20Vichi%2C%20vi%20un%20trabajo%20en%20la%20web%20y%20quiero%20una%20consulta" class="btn btn--whatsapp" target="_blank" rel="noopener">Consultar trabajo similar</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
