@@ -541,6 +541,25 @@ ul {
   color: #ffffff;
 }
 
+.hero__address {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.hero__address svg {
+  color: var(--gold);
+  flex: 0 0 auto;
+}
+
 /* ============ SECTIONS ============ */
 .section__head {
   text-align: center;
@@ -1418,8 +1437,22 @@ ul {
   .booking { padding: 70px 0; }
   .contact { padding: 70px 0; }
   .section__head { margin-bottom: 36px; }
-  .hero__trust { gap: 24px; padding-top: 24px; }
+  .hero__trust {
+    gap: 24px;
+    padding-top: 24px;
+    justify-content: center;
+    text-align: center;
+  }
   .trust__item strong { font-size: 22px; }
+  .hero__inner { text-align: center; }
+  .hero__badge,
+  .hero__cta { justify-content: center; }
+  .hero__subtitle { margin-left: auto; margin-right: auto; }
+  .hero__address {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .confirm { padding: 32px 22px 24px; }
   .confirm__actions { flex-direction: column; }
   .confirm__actions .btn { width: 100%; }
